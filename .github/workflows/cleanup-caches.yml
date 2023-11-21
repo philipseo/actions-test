@@ -18,4 +18,4 @@ jobs:
       - name: cleanup caches
         uses: philipseo/actions/workflows/cleanup-caches.yml@main
         with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
+          github-token: ${{ secrets.GH_TOKEN }}
