@@ -1,0 +1,27 @@
+name: Test Cleanup caches by a branch
+
+on:
+  pull_request:
+    types: [closed]
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  cleanup-caches:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Checkout actions
+        uses: actions/checkout@v4
+        with:
+          repository: philipseo/actions
+          path: .github/
+
+      - name: cleanup caches
+        uses: ./.github/workflows/cleanup-caches.yml
+        with:
+          github-token: ${{ secrets.GH_ACCESS_TOKEN }}
