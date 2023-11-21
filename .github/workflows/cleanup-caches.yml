@@ -16,6 +16,6 @@ jobs:
         uses: actions/checkout@v4
 
       - name: cleanup caches
-        uses: philipseo/actions/workflows/cleanup-caches.yml@main
+        uses: philipseo/workflows/cleanup-caches.yml@main
         with:
           github-token: ${{ secrets.GH_TOKEN }}
