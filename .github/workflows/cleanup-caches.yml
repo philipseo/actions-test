@@ -2,7 +2,7 @@ name: Test Cleanup caches by a branch
 
 on:
   pull_request:
-    types: [opened, closed]
+    types: [opened, synchronize, closed]
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
