@@ -10,12 +10,6 @@ concurrency:
 
 jobs:
   cleanup-caches:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-
-      - name: cleanup caches
-        uses: philipseo/actions/.github/workflows/cleanup-caches.yml@main
-        with:
-          github-token: ${{ secrets.GH_TOKEN }}
+    uses: philipseo/actions/.github/workflows/cleanup-caches.yml@main
+    with:
+      github-token: ${{ secrets.GH_TOKEN }}
