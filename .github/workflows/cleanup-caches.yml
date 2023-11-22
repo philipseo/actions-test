@@ -8,5 +8,4 @@ jobs:
   cleanup-caches:
     name: Use Reusable Cleanup Caches Workflow
     uses: philipseo/actions/.github/workflows/cleanup-caches.yml@main
-    with:
-      GH_TOKEN: ${{ secrets.GH_TOKEN }}
+    secrets: inherit
