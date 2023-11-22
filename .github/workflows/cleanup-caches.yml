@@ -1,4 +1,4 @@
-name: Test Cleanup caches by a branch
+name: Test Cleanup caches
 
 on:
   pull_request:
