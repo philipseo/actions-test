@@ -11,5 +11,4 @@ concurrency:
 jobs:
   cleanup-caches:
     uses: philipseo/actions/.github/workflows/cleanup-caches.yml@main
-    with:
-      github-token: ${{ secrets.GH_TOKEN }}
+    secrets: inherit
