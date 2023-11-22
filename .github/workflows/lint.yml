@@ -1,0 +1,12 @@
+name: Test Lint
+
+on:
+  pull_request:
+    types: [opened, synchronize]
+
+jobs:
+  lint:
+    name: Use Reusable Lint Workflow
+    uses: philipseo/actions/.github/workflows/lint.yml@main
+    secrets:
+      GH_TOKEN: ${{ secrets.GH_TOKEN }}
