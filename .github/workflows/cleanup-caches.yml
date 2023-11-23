@@ -7,6 +7,6 @@ on:
 jobs:
   cleanup-caches:
     name: Use Reusable Cleanup Caches Workflow
-    uses: philipseo/actions/.github/workflows/cleanup-caches.yml@main
+    uses: philipseo/actions/.github/workflows/reusable-cleanup-caches.yml@main
     secrets:
       GH_TOKEN: ${{ secrets.GH_TOKEN }}
