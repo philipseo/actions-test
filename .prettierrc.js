@@ -1,10 +1,3 @@
-module.exports = {
-  useTabs: false,
-  semi: true,
-  singleQuote: true,
-  printWidth: 80,
-  tabWidth: 2,
-  trailingComma: 'all',
-  endOfLine: 'lf',
-  arrowParens: 'always',
-};
+const baseConfig = require('@philipseo/configs/prettier/base');
+
+module.exports = baseConfig;
