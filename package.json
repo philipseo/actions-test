@@ -1,0 +1,15 @@
+{
+  "name": "@philipseo/actions-test",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "prepare": "husky install",
+    "lint-staged": "lint-staged",
+    "prettier": "prettier .",
+    "prettier:fix": "pnpm prettier --write",
+    "lint": "pnpm prettier"
+  },
+  "devDependencies": {
+    "@philipseo/configs": "0.0.2"
+  }
+}

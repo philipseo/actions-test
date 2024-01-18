@@ -1,0 +1,12 @@
+### OS ###
+.DS_*/
+
+### IDE ###
+### Jetbrains ###
+.idea/
+
+### DEPENDENCIES ###
+node_modules/
+
+### Etc ###
+*.log
