@@ -1,0 +1,12 @@
+name: Test clear cache
+
+on:
+  pull_request:
+    types: [closed]
+
+jobs:
+  cleanup-caches:
+    name: Use reusable clear github cache workflow
+    uses: philipseo/actions/.github/workflows/reusable-clear-github-cache.yml@main
+    secrets:
+      GH_TOKEN: ${{ secrets.GH_TOKEN }}
