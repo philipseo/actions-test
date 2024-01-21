@@ -4,9 +4,12 @@ on:
   pull_request:
     types: [opened, synchronize]
 
+env:
+  github-token: ${{ secrets.GH_TOKEN }}
+
 jobs:
   lint:
-    name: Use Reusable Lint Workflow
+    name: Use reusable versioning workflow
     uses: philipseo/actions/.github/workflows/reusable-versioning.yml@main
     with:
-      github-token: ${{ secrets.GH_TOKEN }}
+      github-token: ${{ env.github-token }}
