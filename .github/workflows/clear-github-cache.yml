@@ -1,4 +1,4 @@
-name: Test clear cache
+name: Test clear github cache
 
 on:
   pull_request:
