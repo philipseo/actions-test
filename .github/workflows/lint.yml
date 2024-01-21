@@ -6,7 +6,5 @@ on:
 
 jobs:
   lint:
-    name: Use Reusable Lint Workflow
+    name: Use reusable lint workflow
     uses: philipseo/actions/.github/workflows/reusable-lint.yml@main
-    secrets:
-      GH_TOKEN: ${{ secrets.GH_TOKEN }}

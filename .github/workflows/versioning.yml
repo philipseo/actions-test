@@ -1,0 +1,12 @@
+name: Test versioning
+
+on:
+  pull_request:
+    types: [opened, synchronize]
+
+jobs:
+  lint:
+    name: Use reusable versioning workflow
+    uses: philipseo/actions/.github/workflows/reusable-versioning.yml@main
+    secrets:
+      GH_TOKEN: ${{ secrets.GH_TOKEN }}
