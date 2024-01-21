@@ -8,5 +8,5 @@ jobs:
   lint:
     name: Use reusable versioning workflow
     uses: philipseo/actions/.github/workflows/reusable-versioning.yml@main
-    with:
-      github-token: ${{ secrets.GH_TOKEN }}
+    secrets:
+      GH_TOKEN: ${{ secrets.GH_TOKEN }}
