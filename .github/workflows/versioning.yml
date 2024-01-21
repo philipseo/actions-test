@@ -2,7 +2,7 @@ name: Test versioning
 
 on:
   pull_request:
-    types: [opened, synchronize]
+    types: [closed]
 
 jobs:
   lint:
