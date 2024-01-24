@@ -9,6 +9,6 @@ jobs:
     name: Use reusable versioning workflow
     uses: philipseo/actions/.github/workflows/reusable-versioning.yml@main
     with:
-      release-command-execution: 'false'
+      release-command-execution: false
     secrets:
       GH_TOKEN: ${{ secrets.GH_TOKEN }}
