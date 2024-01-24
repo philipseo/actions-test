@@ -9,5 +9,4 @@
 node_modules/
 
 ### Etc ###
-reusable-actions/
 *.log
